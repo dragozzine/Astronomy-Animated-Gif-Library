@@ -2,3 +2,4 @@ name,display_name,chapter(int),source code (y/n), gif images (y/n), supplemental
 radial_velocity,Radial Velocity,21,n,n,n,exoplanets
 keplers_first,Kepler's First Law,3,y,y,n,orbits
 keplers_first_ellipse,Kepler's First Law - ecc < 1,3,y,y,n,orbits
+pluto_charon_orbit,Charon Orbiting Pluto,3,n,n,n,orbits
