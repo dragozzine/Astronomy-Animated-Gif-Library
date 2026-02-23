@@ -1,5 +1,7 @@
 # Astronomy-Animated-Gif-Library
 
+See the page here: https://dragozzine.github.io/Astronomy-Animated-Gif-Library/index.html
+
 The Astronomy Animated Gif Library (AAGL) was started by Darin Ragozzine at Brigham Young University (BYU) to support astronomy educators by gathering and cataloging animations. For questions or suggestions, please contact darin_ragozzine@byu.edu. It was originally conceived and organized in April 2020. A few students, notably Maya Laker, have helped with the organization and gathering. In July 2021, Dr. Ragozzine submitted an NSF CAREER proposal that included development of the AAGL which was selected in January 2022. 
 
 Introductory astronomy survey courses for non-science majors (”Astro 101”) reach an estimated
