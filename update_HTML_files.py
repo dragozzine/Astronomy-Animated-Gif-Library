@@ -12,7 +12,7 @@ import math
 from os import listdir
 from os.path import isfile, join
 
-PATH = "D:/Graduate_Research/Animated_gif_library/"
+PATH = "./"
 NAME_COL = 0
 DIS_NAME_COL = 1
 CH_COL = 2
@@ -86,7 +86,7 @@ def updateChapters(data):
             '<span class="icon-bar"></span> \n' +
             '<span class="icon-bar"></span> \n' +
             '</button> \n' +
-            '<img src="../images\haumea.jpg" class="rounded float-left" alt="haumea" height="50" width="50"> \n' +
+            '<img src="../images/haumea.jpg" class="rounded float-left" alt="haumea" height="50" width="50"> \n' +
             '</div> \n' +
             '<div class="collapse navbar-collapse" id="myNavbar"> \n' +
             '<ul class="nav navbar-nav"> \n' +
@@ -168,6 +168,7 @@ def updateChapters(data):
             '</body> \n' +
             '</html> \n')
         
+        print(fileName)
         file = open(fileName,'w+')
         file.write(htmlFile)
         file.close()
@@ -250,7 +251,7 @@ def updateIndex(data):
         '<span class="icon-bar"></span> \n' +
         '<span class="icon-bar"></span> \n' +
         '</button> \n' +
-        '<img src="images\haumea.jpg" class="rounded float-left" alt="haumea" height="50" width="50"> \n' +
+        '<img src="images/haumea.jpg" class="rounded float-left" alt="haumea" height="50" width="50"> \n' +
         '</div> \n' +
         '<div class="collapse navbar-collapse" id="myNavbar"> \n' +
         '<ul class="nav navbar-nav"> \n' +
@@ -435,7 +436,7 @@ def updateFileList(data):
         '<span class="icon-bar"></span> \n' +
         '<span class="icon-bar"></span> \n' +
         '</button> \n' +
-        '<img src="images\haumea.jpg" class="rounded float-left" alt="haumea" height="50" width="50"> \n' +
+        '<img src="images/haumea.jpg" class="rounded float-left" alt="haumea" height="50" width="50"> \n' +
         '</div> \n' +
         '<div class="collapse navbar-collapse" id="myNavbar"> \n' +
         '<ul class="nav navbar-nav"> \n' +
@@ -522,7 +523,12 @@ def updateFileList(data):
     file.close()
 
 def main():
+    print('main')
     gif_data = readDataFile()
     updateChapters(gif_data)
     updateIndex(gif_data)
     updateFileList(gif_data)
+
+
+if __name__ == "__main__":
+    main()
