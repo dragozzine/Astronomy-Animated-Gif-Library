@@ -8,61 +8,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-     .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-    background-color: #0b1a2a;
-    border-color: #0b1a2a;
-}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #c9d6e2;
-}
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 850px
+        }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: white;
-}
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
 
-body {
-    background-color: #0e1c2f;
-    color: #e6edf3;
-}
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
 
-.row.content {
-    min-height: 900px;
-}
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
 
-.sidenav {
-    padding-top: 25px;
-    background-color: #11263c;
-    color: #c9d6e2;
-    min-height: 100%;
-}
-
-.sidenav a {
-    color: #8fbce6;
-    text-decoration: none;
-}
-
-.sidenav a:hover {
-    color: white;
-}
-
-h1 {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-hr {
-    border-color: #2f4f6f;
-}
-
-footer {
-    background-color: #0b1a2a;
-    color: #9fb3c8;
-    padding: 20px;
-    font-size: 14px;
-}
+            .row.content {
+                height: auto;
+            }
+            .dropdown-toggle {
+                text-align: left
+            }
+        }
     </style>
 </head>
 <body>
@@ -129,11 +113,6 @@ footer {
     <div class="container-fluid text-center">
         <div class="row content">
            <div class="col-sm-2 sidenav text-left">
-      <h4>Navigation</h4>
-    <hr>
-    <p><a href="index.html">Home</a></p>
-    <p><a href="gif_index.html">All Animations</a></p>
-    <p><a href="file_list.html">File Directory</a></p>
 </div>
             <div class="col-sm-8 text-left">
                 <h1>Introduction to the Astronomy Animated Gif Library</h1>
@@ -218,11 +197,6 @@ footer {
                 </p>
             </div>
             <div class="col-sm-2 sidenav text-left">
-    <h4>Project Info</h4>
-    <hr>
-    <p>Astronomy Animated GIF Library</p>
-    <p>Educational Resource</p>
-    <p>Open-Access Media</p>
 </div>
         </div>
     </div>
