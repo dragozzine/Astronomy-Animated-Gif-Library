@@ -20,17 +20,19 @@ html, body {
 }
 
 /* Flexbox makes the sidebars stretch to the bottom of the content */
+/* Change this in your <style> tag */
 .row.content {
+    min-height: calc(100vh - 150px); /* Adjust 150px based on your nav/footer height */
     display: flex;
-    flex-flow: row wrap;
-    min-height: 100vh; 
+    flex-wrap: wrap;
 }
 
-/* Set gray background color */
 .sidenav {
-    padding-top: 20px;
     background-color: #f1f1f1;
-    height: auto; /* Lets flexbox handle the stretching */
+    height: auto;
+    padding-top: 20px;
+}
+
 }
 
 /* On small screens, switch back to normal block layout */
@@ -40,8 +42,9 @@ html, body {
         height: auto;
     }
 
-        footer {
+         footer {
             background-color: #555;
+          Questions? Contact:Professor Ragozzine | <a href="mailto:darin_ragozzine@byu.edu">darin_ragozzine@byu.edu</a></p>
             color: white;
             padding: 15px;
         }
